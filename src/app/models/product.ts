@@ -6,4 +6,5 @@ export interface Product {
     size: string;
     barcode: string;
     adminId: number;
+    isDeleted: boolean;
 }

@@ -1,5 +1,6 @@
 export interface Warehouse {
     id: number;
     name: string;
-    createdDate: Date
+    createdDate: Date;
+    isDeleted: boolean;
 }
