@@ -7,6 +7,7 @@ import { WarehouseTableComponent } from './components/warehouse-table/warehouse-
 const routes: Routes = [
   { path: '', component: DashboardComponent},
   { path: 'products', component: ProductTableComponent },
+  { path: 'barcode', component: ProductTableComponent },
   { path: 'warehouses', component: WarehouseTableComponent },
 ];
 

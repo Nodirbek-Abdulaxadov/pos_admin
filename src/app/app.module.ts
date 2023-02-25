@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WarehouseTableComponent } from './components/warehouse-table/warehouse-table.component';
 import { ProductTableComponent } from './components/product-table/product-table.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { BarcodeReaderComponent } from './components/barcode-reader/barcode-reader.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     ToolsComponent,
     WarehouseTableComponent,
     ProductTableComponent,
-    DashboardComponent
+    DashboardComponent,
+    BarcodeReaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ZXingScannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
